@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     origin:['http://localhost:5173',
-            "https://task-management-client-0lzk.onrender.com"
+            "https://task-management-client-yq86.onrender.com"
             ],
      credentials: true,
 }))
