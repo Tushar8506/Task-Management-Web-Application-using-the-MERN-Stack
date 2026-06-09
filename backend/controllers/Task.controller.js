@@ -60,6 +60,7 @@ export const showTask = async (req, res) => {
 
         res.status(200).json({
             status: true,
+             taskData
         })
     } catch (error) {
         res.status(500).json({
