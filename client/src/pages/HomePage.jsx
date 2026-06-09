@@ -30,7 +30,7 @@ const HomePage = () => {
     try {
       const validatedData = taskSchema.parse(formData);
       const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/task/create-task`,
+        `${import.meta.env.VITE_API_BASE_URL}/api/task/create-task`,
         {
           method: "POST",
           headers: { "Content-type": "application/json" },
