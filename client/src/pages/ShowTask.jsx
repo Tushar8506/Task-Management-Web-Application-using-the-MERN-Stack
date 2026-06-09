@@ -32,7 +32,7 @@ const ShowTask = () => {
     const getTask = async () => {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_API_BASE_URL}/task/show-task/${taskid}`,
+          `${import.meta.env.VITE_API_BASE_URL}/api/task/show-task/${taskid}`,
           {
             credentials: "include",
           },
@@ -58,7 +58,7 @@ const ShowTask = () => {
     try {
       const validatedData = taskSchema.parse(formData);
       const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/task/update-task/${taskid}`,
+        `${import.meta.env.VITE_API_BASE_URL}/api/task/update-task/${taskid}`,
         {
           method: "PUT",
           headers: { "Content-type": "application/json" },
