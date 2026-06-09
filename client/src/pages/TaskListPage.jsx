@@ -11,7 +11,7 @@ const TaskListPage = () => {
     const getTask = async () => {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_API_BASE_URL}/task/get-all-task`,
+          `${import.meta.env.VITE_API_BASE_URL}/api/task/get-all-task`,
           {
             credentials: "include",
           },
@@ -28,7 +28,7 @@ const TaskListPage = () => {
   const deleteTask = async (taskid) => {
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/task/delete-task/${taskid}`,
+        `${import.meta.env.VITE_API_BASE_URL}/api/task/delete-task/${taskid}`,
         {
           method: "DELETE",
           credentials: "include",
